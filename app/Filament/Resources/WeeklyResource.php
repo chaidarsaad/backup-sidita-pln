@@ -60,7 +60,7 @@ class WeeklyResource extends Resource
     {
         return $table
             ->modifyQueryUsing(function (Builder $query) {
-                $query->orderBy('name', 'desc');
+                $query->orderBy('date_created', 'desc');
             })
             ->columns([
                 Tables\Columns\TextColumn::make('name')
