@@ -38,6 +38,7 @@ class BapResource extends Resource
                 Forms\Components\DatePicker::make('date_created')
                     ->required(),
                 Forms\Components\Toggle::make('is_approve')
+                    ->default(true)
                     ->required(),
                 Forms\Components\DatePicker::make('date_approved')
                     ->required(),

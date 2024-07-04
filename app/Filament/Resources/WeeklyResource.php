@@ -73,6 +73,7 @@ class WeeklyResource extends Resource
                     ->date()
                     ->sortable(),
                 Tables\Columns\IconColumn::make('is_approve')
+                    ->default(true)
                     ->boolean(),
                 Tables\Columns\TextColumn::make('date_approved')
                     ->date()
