@@ -11,10 +11,9 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('termyns', function (Blueprint $table) {
+        Schema::create('baps', function (Blueprint $table) {
             $table->id();
             $table->string('name')->unique();
-            $table->string('progress');
             $table->date('date_created');
             $table->boolean('is_approve')->default(true);
             $table->date('date_approved');
@@ -28,6 +27,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('termyns');
+        Schema::dropIfExists('baps');
     }
 };
