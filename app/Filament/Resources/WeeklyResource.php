@@ -44,6 +44,7 @@ class WeeklyResource extends Resource
                 Forms\Components\DatePicker::make('date_created')
                     ->required(),
                 Forms\Components\Toggle::make('is_approve')
+                    ->accepted()
                     ->required(),
                 Forms\Components\DatePicker::make('date_approved')
                     ->required(),
@@ -73,7 +74,6 @@ class WeeklyResource extends Resource
                     ->date()
                     ->sortable(),
                 Tables\Columns\IconColumn::make('is_approve')
-                    ->accepted()
                     ->boolean(),
                 Tables\Columns\TextColumn::make('date_approved')
                     ->date()
