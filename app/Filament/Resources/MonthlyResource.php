@@ -53,7 +53,7 @@ class MonthlyResource extends Resource
                 Forms\Components\DatePicker::make('date_created')
                     ->required(),
                 Forms\Components\Toggle::make('is_approve')
-                    ->default(true)
+                    ->accepted()
                     ->required(),
                 Forms\Components\DatePicker::make('date_approved')
                     ->required(),
