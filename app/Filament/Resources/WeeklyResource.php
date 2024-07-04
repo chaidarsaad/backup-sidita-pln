@@ -64,7 +64,6 @@ class WeeklyResource extends Resource
             })
             ->columns([
                 Tables\Columns\TextColumn::make('name')
-                    ->sortable()
                     ->searchable(),
                 Tables\Columns\TextColumn::make('progress')
                     ->label('Progres (%)')
