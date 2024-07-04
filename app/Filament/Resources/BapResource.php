@@ -54,7 +54,7 @@ class BapResource extends Resource
     {
         return $table
             ->modifyQueryUsing(function (Builder $query) {
-                $query->orderBy('date_created', 'desc');
+                $query->orderBy('name', 'desc');
             })
             ->columns([
                 Tables\Columns\TextColumn::make('name')
