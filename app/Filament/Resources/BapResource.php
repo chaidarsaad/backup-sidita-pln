@@ -20,10 +20,12 @@ class BapResource extends Resource
         return 'BA Pembayaran';
     }
 
+
     protected static ?string $model = Bap::class;
     protected static ?int $navigationSort = 5;
 
-    protected static ?string $navigationIcon = 'heroicon-o-rectangle-stack';
+    protected static ?string $navigationIcon = 'heroicon-o-document-text';
+    protected static ?string $activeNavigationIcon = 'heroicon-s-document-text';
 
     public static function form(Form $form): Form
     {

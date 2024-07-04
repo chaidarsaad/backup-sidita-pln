@@ -26,7 +26,8 @@ class WeeklyResource extends Resource
     protected static ?string $model = Weekly::class;
     protected static ?string $cluster = LaporanProgres::class;
 
-    protected static ?string $navigationIcon = 'heroicon-o-rectangle-stack';
+    protected static ?string $navigationIcon = 'heroicon-o-document-text';
+    protected static ?string $activeNavigationIcon = 'heroicon-s-document-text';
 
     public static function form(Form $form): Form
     {

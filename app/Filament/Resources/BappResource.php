@@ -20,9 +20,11 @@ class BappResource extends Resource
         return 'BA Pemeriksaan Pekerjaan';
     }
 
+
     protected static ?string $model = Bapp::class;
     protected static ?int $navigationSort = 4;
-    protected static ?string $navigationIcon = 'heroicon-o-rectangle-stack';
+    protected static ?string $navigationIcon = 'heroicon-o-document-text';
+    protected static ?string $activeNavigationIcon = 'heroicon-s-document-text';
 
     public static function form(Form $form): Form
     {
