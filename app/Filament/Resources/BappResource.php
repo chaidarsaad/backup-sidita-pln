@@ -48,9 +48,6 @@ class BappResource extends Resource
                     ->downloadable()
                     ->previewable(true)
                     ->acceptedFileTypes(['application/pdf']),
-                PdfViewerField::make('file')
-                    ->label('View the PDF')
-                    ->minHeight('40svh')
             ]);
     }
 
