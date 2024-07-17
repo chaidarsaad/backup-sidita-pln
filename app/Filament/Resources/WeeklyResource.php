@@ -61,9 +61,6 @@ class WeeklyResource extends Resource
     public static function table(Table $table): Table
     {
         return $table
-            ->modifyQueryUsing(function (Builder $query) {
-                $query->orderBy('date_created', 'desc');
-            })
             ->columns([
                 Tables\Columns\TextColumn::make('name')
                     ->sortable()
@@ -90,6 +87,7 @@ class WeeklyResource extends Resource
                     ->sortable()
                     ->toggleable(isToggledHiddenByDefault: true),
             ])
+            ->defaultSort('name', 'desc')
             ->filters([
                 //
             ])
