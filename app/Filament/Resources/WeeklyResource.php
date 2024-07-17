@@ -87,7 +87,6 @@ class WeeklyResource extends Resource
                     ->sortable()
                     ->toggleable(isToggledHiddenByDefault: true),
             ])
-            ->defaultSort('name', 'desc')
             ->filters([
                 //
             ])
