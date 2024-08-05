@@ -26,6 +26,7 @@ class DashboardPanelProvider extends PanelProvider
     {
         return $panel
             ->sidebarCollapsibleOnDesktop()
+            ->profile()
             ->default()
             ->id('dashboard')
             ->path('dashboard')
